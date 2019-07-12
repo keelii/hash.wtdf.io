@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
         ;['sha256', 'sha512', 'sha1', 'md5'].forEach(m => {
             if (id(m)) {
-                id(m).value = fnMap[m](source)
+                id(m).value = source ? fnMap[m](source) : ''
             }
         })
     }

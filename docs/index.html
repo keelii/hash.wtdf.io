@@ -52,14 +52,14 @@
 
     <link rel="manifest" href="/manifest.json" />
     <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js')
-                    .then((reg) => {
-                        console.log('Service worker registered.')
-                    })
-            })
-        }
+        // if ('serviceWorker' in navigator) {
+        //     window.addEventListener('load', () => {
+        //         navigator.serviceWorker.register('/sw.js')
+        //             .then((reg) => {
+        //                 console.log('Service worker registered.')
+        //             })
+        //     })
+        // }
     </script>
 </head>
 <body>
@@ -114,58 +114,6 @@
                     </tbody>
                 </table>
             </div>
-        </div>
-        <div id="editor">
-            <div class="row" style="display:none;" data-type="md5">
-                <h3 class="col-1">MD5</h3>
-                <div class="col-5-12">
-                    <pre class="content content-left" contenteditable spellcheck="false"></pre>
-                </div>
-                <div class="col-2-12 tac">
-                    <p><button class="btn full-width outline">Encode »</button></p>
-                </div>
-                <div class="col-5-12">
-                    <pre class="content content-right" contenteditable spellcheck="false"></pre>
-                </div>
-            </div>
-            
-            <div class="row" style="display:none;" data-type="sha1">
-                <h3 class="col-1">SHA-1</h3>
-                <div class="col-5-12">
-                    <pre class="content content-left" contenteditable spellcheck="false"></pre>
-                </div>
-                <div class="col-2-12 tac">
-                    <p><button class="btn full-width outline">Encode »</button></p>
-                </div>
-                <div class="col-5-12">
-                    <pre class="content content-right" contenteditable spellcheck="false"></pre>
-                </div>
-            </div>
-            <div class="row" style="display:none;" data-type="sha256">
-                <h3 class="col-1">SHA-256</h3>
-                <div class="col-5-12">
-                    <pre class="content content-left" contenteditable spellcheck="false"></pre>
-                </div>
-                <div class="col-2-12 tac">
-                    <p><button class="btn full-width outline">Encode »</button></p>
-                </div>
-                <div class="col-5-12">
-                    <pre class="content content-right" contenteditable spellcheck="false"></pre>
-                </div>
-            </div>
-            <div class="row" style="display:none;" data-type="sha512">
-                <h3 class="col-1">SHA-512</h3>
-                <div class="col-5-12">
-                    <pre class="content content-left" contenteditable spellcheck="false"></pre>
-                </div>
-                <div class="col-2-12 tac">
-                    <p><button class="btn full-width outline">Encode »</button></p>
-                </div>
-                <div class="col-5-12">
-                    <pre class="content content-right" contenteditable spellcheck="false"></pre>
-                </div>
-            </div>
-            
         </div>
     </div>
 
